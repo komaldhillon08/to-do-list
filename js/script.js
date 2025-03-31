@@ -38,12 +38,21 @@ listContainer.addEventListener('click', function (e) {
 }, false)
 
 // Load saved data from localStorage when the page loads
-window.addEventListener('DOMContentLoaded', () => {
+// one awy
+
+/* window.addEventListener('DOMContentLoaded', () => {
     const savedData = localStorage.getItem("data");
     if (savedData) {
         listContainer.innerHTML = savedData;
     }
-});
+}); */
+
+// second way
+function showData() {
+    listContainer.innerHTML = localStorage.getItem("data")
+}
+showData();
+
 
 function saveData() {
     localStorage.setItem("data", listContainer.innerHTML)
