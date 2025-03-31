@@ -19,13 +19,13 @@
     border-radius: 20px;
 
 }
-.to-do-list h1{
+.to-do-list h2{
     display: flex;
     color: #002765;
     align-items: center;
     margin-bottom: 20px;
 }
-.to-do-list h1 img{
+.to-do-list h2 img{
     width: 25px;
     margin-left: 15px;
 }
@@ -47,7 +47,6 @@
     font-size: 14px;
 }
 .row button{
-
     border: none;
     outline: none;
     background-color: #ff5945;
@@ -100,4 +99,12 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
     color: black;
+}
+@media(max-width:575px){
+    .row button {
+        padding: 7px 15px;
+        right: 56px;
+        position: absolute
+
+    }
 }
